@@ -1,3 +1,5 @@
+'use client'
+
 import { Chart } from 'chart.js/auto'
 // import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
 // Chart.register(ArcElement, Tooltip, Legend);
@@ -45,7 +47,7 @@ const data = {
 };
 export default function grafico() {
     return (
-        <div className='chart' style={{ aspectRatio: 1}}>
+        <div className='w-full aspect-square p-4 rounded-lg shadow-lg border border-slate-200'>
             <Pie options={options} data={data} />
         </div>
     )

@@ -1,3 +1,5 @@
+'use client'
+
 import { Chart } from 'chart.js/auto'
 
 // import {
@@ -52,7 +54,7 @@ const data = {
 
 export default function grafico() {
     return (
-        <div className='chart' style={{ aspectRatio: 1}}>
+        <div className='w-full aspect-[2] p-4 rounded-lg shadow-lg border border-slate-200'>
             <Radar options={options} data={data} />
         </div>
     )

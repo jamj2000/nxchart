@@ -1,3 +1,5 @@
+'use client'
+
 import { Chart } from 'chart.js/auto'
 
 // import {
@@ -21,12 +23,12 @@ import { Chart } from 'chart.js/auto'
 //     Tooltip,
 //     Legend
 //   );
-  
+
 
 import { Line } from 'react-chartjs-2';
 
 const options = {
-//   responsive: true,
+  //   responsive: true,
   plugins: {
     title: {
       display: true,
@@ -65,9 +67,9 @@ const data = {
 };
 
 export default function grafico() {
-    return (
-        <div className='chart'>
-            <Line options={options} data={data} />
-        </div>
-    )
+  return (
+    <div className='w-full aspect-[2] p-4 rounded-lg shadow-lg border border-slate-200'>
+      <Line options={options} data={data} />
+    </div>
+  )
 }

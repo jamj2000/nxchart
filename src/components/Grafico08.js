@@ -1,3 +1,5 @@
+'use client'
+
 import { Chart } from 'chart.js/auto'
 // import {
 //   Chart,
@@ -35,7 +37,7 @@ const data = {
 
 export default function grafico() {
     return (
-        <div className='chart'>
+        <div className='w-full aspect-[2] p-4 rounded-lg shadow-lg border border-slate-200'>
             <Scatter options={options} data={data} />
         </div>
     )

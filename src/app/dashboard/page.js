@@ -1,4 +1,4 @@
-'use client'
+
 
 import Link from 'next/link'
 import Grafico01 from '@/components/Grafico01'
@@ -34,8 +34,8 @@ function page() {
     return (
         <>
             <Link href='/'>Volver a página de INICIO</Link>
-            <h1 className='text-center'>Dashboard</h1>
-            <div className='grid'>
+            <h1 className='text-2xl text-center'>Dashboard</h1>
+            <div className='w-full gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 <Grafico01 />
                 <Grafico02 />
                 <Grafico03 />

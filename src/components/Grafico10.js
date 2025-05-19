@@ -1,3 +1,5 @@
+'use client'
+
 import { Chart } from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
 
@@ -21,7 +23,7 @@ const data = {
 
 export default function grafico() {
     return (
-        <div className='chart'>
+        <div className='w-full p-4 rounded-lg shadow-lg border border-slate-200'>
             <Bar options={options} data={data} />
         </div>
     )
